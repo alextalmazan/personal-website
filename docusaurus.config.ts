@@ -4,7 +4,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "AlexT Personal Website",
-  tagline: "Dinosaurs are cool",
+  tagline: "My personal space",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -39,21 +39,6 @@ const config: Config = {
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -65,25 +50,19 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "Alex Talmazan",
+      title: "",
       logo: {
-        alt: "Website Logo",
-        src: "img/logo.svg",
+        alt: "My Logo",
+        src: "img/logo.svg", // Replace with your logo if you have one
       },
       items: [
-        {
-          type: "docSidebar",
-          sidebarId: "tutorialSidebar",
-          position: "left",
-          label: "Tutorial",
-        },
-        {
-          to: "/blog",
-          label: "Blog",
-          position: "left",
-        },
+        { to: "/about", label: "About Me", position: "left" },
+        { to: "/resume", label: "Resume", position: "left" },
+        { to: "/blog", label: "Blog", position: "left" },
       ],
+      style: "dark", // Navbar dark theme
     },
+
     footer: {
       style: "dark",
       links: [
