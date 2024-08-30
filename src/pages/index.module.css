@@ -21,3 +21,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.about {
+  padding: 2rem;
+  color: white;
+  background-color: black;
+}
